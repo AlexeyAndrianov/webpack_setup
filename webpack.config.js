@@ -5,9 +5,11 @@ module.exports = {
         path: path.join(__dirname, '/dist'),
         filename: 'index.bundle.js',
     },
-    derServer: {
+    devServer: {
+        static: path.resolve(__dirname, 'src'),
         port: 3000,
-        watchContentBase: true,
+        open: true,
+        hot: true
     },
     module: {
         rules: [
