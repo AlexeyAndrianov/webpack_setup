@@ -8,7 +8,7 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
         static: path.resolve(__dirname, 'src'),
-        port: 3000,
+        port: process.env.DEV_PORT,
         open: true,
         hot: true
     },
